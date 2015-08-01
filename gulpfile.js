@@ -1,4 +1,4 @@
-// Gulpfile v0.2.0
+// Gulpfile v0.3.0-SNAPSHOT
 
 var gulp = require('gulp');
 var plugins = require('gulp-load-plugins')();
