@@ -76,6 +76,7 @@ pipes.builtAppScriptsProd = function() {
 
     return es.merge(validatedAppScripts, compiledAppCS)
         .pipe(pipes.orderedAppScripts())
+        .pipe(plugins.ngAnnotate())
         .pipe(plugins.sourcemaps.init())
             .pipe(plugins.concat('app.min.js'))
             .pipe(plugins.uglify())
